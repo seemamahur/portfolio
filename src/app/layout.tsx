@@ -13,11 +13,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Toukoum Portfolio',
+  title: 'Seema Portfolio',
   description:
     'Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience',
   keywords: [
-    'Toukoum',
+    'Seema',
     'Portfolio',
     'Developer',
     'AI',
@@ -30,36 +30,36 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: 'Toukoum',
-      url: 'https://toukoum.fr',
+      name: 'Seema',
+      url: 'https://seema',
     },
   ],
-  creator: 'Toukoum',
+  creator: 'Seema',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://toukoum.fr',
-    title: 'Toukoum Portfolio',
+    url: 'https://seema',
+    title: 'Seema Portfolio',
     description:
       'Interactive portfolio with an AI-powered Memoji that answers questions about me',
-    siteName: 'Toukoum Portfolio',
+    siteName: 'Seema Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Toukoum Portfolio',
+    title: 'Seema Portfolio',
     description:
       'Interactive portfolio with an AI-powered Memoji that answers questions about me',
-    creator: '@toukoum',
+    creator: '@seema',
   },
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
+        url: '/logo-toukoum.svg?v=3',
         sizes: 'any',
       },
     ],
-    shortcut: '/favicon.svg?v=2',
-    apple: '/apple-touch-icon.svg?v=2',
+    shortcut: '/logo-toukoum.svg?v=3',
+    apple: '/logo-toukoum.svg?v=3',
   },
 };
 
@@ -75,7 +75,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <link rel="icon" href="/favicon.svg" sizes="any" />
+        <link rel="icon" href="/logo-toukoum.svg" sizes="any" />
         <Script
           defer
           data-website-id="68e067ba369b1b7f1f096056"

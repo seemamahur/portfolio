@@ -42,10 +42,25 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
   );
 
   // Fonction qui utilise window.location pour forcer un rechargement complet
+  // const handleContactMe = () => {
+  //   setIsOpen(false);
+  //   // Forcer un rechargement complet de la page avec la requête
+  //   window.location.href = '/chat?query=How%20can%20I%20contact%20you%3F';
+  // };
+
   const handleContactMe = () => {
     setIsOpen(false);
-    // Forcer un rechargement complet de la page avec la requête
-    window.location.href = '/chat?query=How%20can%20I%20contact%20you%3F';
+    
+    const phoneNumber = "919718640979"; // your number with country code, no + or spaces
+    const message = "Hi, I'd like to get in touch!"; // optional pre-filled message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Opens WhatsApp in a popup window
+    window.open(
+      whatsappUrl,
+      'whatsappPopup',
+      'width=500,height=650,left=200,top=100'
+    );
   };
 
   return (

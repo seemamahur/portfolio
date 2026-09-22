@@ -22,6 +22,7 @@ import { FastfolioCTA } from '@/components/fastfolio-cta';
 import { FastfolioPopup } from '@/components/fastfolio-popup';
 import { PoweredByFastfolio } from '@/components/powered-by-fastfolio';
 import { FastfolioTracking } from '@/lib/fastfolio-tracking';
+import Image from 'next/image';
 
 // ClientOnly component for client-side rendering
 //@ts-ignore
@@ -87,21 +88,26 @@ const Avatar = dynamic<AvatarProps>(
           >
             {isIOS() ? (
               <img
-                src="/landing-memojis.png"
+                src="/landing-memojis_s.png"
                 alt="iOS avatar"
                 className="h-full w-full scale-[1.8] object-contain"
               />
             ) : (
-              <video
-                ref={videoRef}
-                className="h-full w-full scale-[1.8] object-contain"
-                muted
-                playsInline
-                loop
-              >
-                <source src="/final_memojis.webm" type="video/webm" />
-                <source src="/final_memojis_ios.mp4" type="video/mp4" />
-              </video>
+              <img
+  src="/landing-memojis_s.png"
+  alt="Memojis"
+  className="h-full w-full scale-[1.8] object-contain"
+/>
+              // <video
+              //   ref={videoRef}
+              //   className="h-full w-full scale-[1.8] object-contain"
+              //   muted
+              //   playsInline
+              //   loop
+              // >
+              //   <source src="/final_memojis.webm" type="video/webm" />
+              //   <source src="/final_memojis_ios.mp4" type="video/mp4" />
+              // </video>
             )}
           </div>
         </div>

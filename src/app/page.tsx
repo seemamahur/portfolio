@@ -64,19 +64,19 @@ export default function Home() {
   useEffect(() => {
     // Précharger les assets du chat en arrière-plan
     const img = new window.Image();
-    img.src = '/landing-memojis.png';
+    img.src = '/landing-memojis_s.png';
 
     // Précharger les vidéos aussi
     const linkWebm = document.createElement('link');
     linkWebm.rel = 'preload'; // Note: prefetch au lieu de preload
-    linkWebm.as = 'video';
-    linkWebm.href = '/final_memojis.webm';
+    linkWebm.as = 'image';
+    linkWebm.href = '/landing-memojis_s.png';
     document.head.appendChild(linkWebm);
 
     const linkMp4 = document.createElement('link');
     linkMp4.rel = 'prefetch';
-    linkMp4.as = 'video';
-    linkMp4.href = '/final_memojis_ios.mp4';
+    linkMp4.as = 'image';
+    linkMp4.href = '/landing-memojis_s.png';
     document.head.appendChild(linkMp4);
   }, []);
 
@@ -106,17 +106,17 @@ export default function Home() {
         </div>
 
         <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Aaaaby 👋
+          Hey, I'm Seema 👋
         </h2>
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          AI Engineer
+        <h1 className="text-1xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+          AI Engineer / Software Developer / Full Stack Developer
         </h1>
       </motion.div>
 
       {/* centre memoji */}
       <div className="relative z-10 h-52 w-48 overflow-hidden sm:h-72 sm:w-72">
         <Image
-          src="/landing-memojis.png"
+          src="/landing-memojis_s.png"
           alt="Hero memoji"
           width={2000}
           height={2000}
@@ -146,7 +146,7 @@ export default function Home() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask me anything…"
+              placeholder="Ask me anything about me…"
               className="w-full border-none bg-transparent text-base text-neutral-800 placeholder:text-neutral-500 focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-500"
             />
             <button

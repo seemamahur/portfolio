@@ -52,7 +52,12 @@ export function FastfolioPopup({ open, onOpenChange, hasReachedLimit = false }: 
               {hasReachedLimit ? (
                 <>You've reached your message limit</>
               ) : (
-                <>Build Your Own <span className="text-[#4c55fa]">AI Portfolio</span></>
+                <>
+                {/* Build Your Own */}
+                 <span >
+                 {/* className="text-[#4c55fa]" */}
+                  {/* AI Portfolio */}
+                  </span></>
               )}
             </DialogTitle>
             {/*<DialogDescription className="text-muted-foreground">
