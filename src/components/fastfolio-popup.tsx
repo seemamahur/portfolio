@@ -109,15 +109,8 @@ export function FastfolioPopup({ open, onOpenChange, hasReachedLimit = false }: 
           </div>
 
           <div className="flex gap-3 pt-2">
-            <Button
-              onClick={handleCTA}
-              className="flex-1 cursor-pointer border-none bg-[#4c55fa] hover:bg-[#4c55fa]/80"
-            >
-              Create Your Portfolio
-            </Button>
+            
           </div>
-
-          <PoweredByFastfolio />
         </div>
       </DialogContent>
     </Dialog>
